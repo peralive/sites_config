@@ -88,15 +88,15 @@
     "channel_id": -1003026009206
   },
   "NAKİTBAHİS": {
-    "message_pattern": "KOD[:\\-]?\\s*([A-Z0-9]{8,15})\\b",
+     "message_pattern": "^NAKİT\\s+(\\b[A-Z0-9]{6,12}\\b)",
     "url_keyword": "nakitbahis",
     "code_index": 0,
     "input_selector": "input.E2E-bonusCode-input",
     "button_selector": "button.ComponentButton.InstanceActiveBonuses.Button",
-    "success_message_selector": ".success-notification",
-    "error_message_selector": ".error-notification",
+    "success_message_selector": "span.success-msg",
+    "error_message_selector": "span.error-msg",
     "site_name": "NAKİTBAHİS",
-    "channel_id": -1002321250370
+    "channel_id": -1003026009206
   },
   "BETSMOVE": {
     "message_pattern": "^BETSMOVE\\s+(\\b[A-Z0-9]{6,12}\\b)",
@@ -176,6 +176,7 @@
     "channel_id": -1003026009206
   }
 }
+
 
 
 
